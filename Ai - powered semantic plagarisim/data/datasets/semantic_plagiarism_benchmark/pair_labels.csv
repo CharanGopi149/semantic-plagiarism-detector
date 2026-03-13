@@ -1,0 +1,41 @@
+document_id,source_document_id,family_id,split,topic,variant,expected_match_type,expected_similarity_band,sections_with_overlap
+f01_direct_copy,f01_source,F01,train,Adaptive Learning Analytics,direct_copy,direct,0.85-1.00,Introduction|Methodology|Results|Conclusion
+f01_paraphrase_light,f01_source,F01,train,Adaptive Learning Analytics,paraphrase_light,semantic,0.70-0.88,Introduction|Methodology|Results|Conclusion
+f01_paraphrase_heavy,f01_source,F01,train,Adaptive Learning Analytics,paraphrase_heavy,semantic,0.55-0.78,Introduction|Methodology|Results|Conclusion
+f01_mosaic,f01_source,F01,train,Adaptive Learning Analytics,mosaic,mixed,0.60-0.84,Introduction|Methodology|Results|Conclusion
+f02_direct_copy,f02_source,F02,train,Renewable Microgrids,direct_copy,direct,0.85-1.00,Introduction|Methodology|Results|Conclusion
+f02_paraphrase_light,f02_source,F02,train,Renewable Microgrids,paraphrase_light,semantic,0.70-0.88,Introduction|Methodology|Results|Conclusion
+f02_paraphrase_heavy,f02_source,F02,train,Renewable Microgrids,paraphrase_heavy,semantic,0.55-0.78,Introduction|Methodology|Results|Conclusion
+f02_mosaic,f02_source,F02,train,Renewable Microgrids,mosaic,mixed,0.60-0.84,Introduction|Methodology|Results|Conclusion
+f03_direct_copy,f03_source,F03,train,Healthcare Cybersecurity,direct_copy,direct,0.85-1.00,Introduction|Methodology|Results|Conclusion
+f03_paraphrase_light,f03_source,F03,train,Healthcare Cybersecurity,paraphrase_light,semantic,0.70-0.88,Introduction|Methodology|Results|Conclusion
+f03_paraphrase_heavy,f03_source,F03,train,Healthcare Cybersecurity,paraphrase_heavy,semantic,0.55-0.78,Introduction|Methodology|Results|Conclusion
+f03_mosaic,f03_source,F03,train,Healthcare Cybersecurity,mosaic,mixed,0.60-0.84,Introduction|Methodology|Results|Conclusion
+f04_direct_copy,f04_source,F04,train,Sustainable Supply Chains,direct_copy,direct,0.85-1.00,Introduction|Methodology|Results|Conclusion
+f04_paraphrase_light,f04_source,F04,train,Sustainable Supply Chains,paraphrase_light,semantic,0.70-0.88,Introduction|Methodology|Results|Conclusion
+f04_paraphrase_heavy,f04_source,F04,train,Sustainable Supply Chains,paraphrase_heavy,semantic,0.55-0.78,Introduction|Methodology|Results|Conclusion
+f04_mosaic,f04_source,F04,train,Sustainable Supply Chains,mosaic,mixed,0.60-0.84,Introduction|Methodology|Results|Conclusion
+f05_direct_copy,f05_source,F05,train,Explainable AI in Credit Risk,direct_copy,direct,0.85-1.00,Introduction|Methodology|Results|Conclusion
+f05_paraphrase_light,f05_source,F05,train,Explainable AI in Credit Risk,paraphrase_light,semantic,0.70-0.88,Introduction|Methodology|Results|Conclusion
+f05_paraphrase_heavy,f05_source,F05,train,Explainable AI in Credit Risk,paraphrase_heavy,semantic,0.55-0.78,Introduction|Methodology|Results|Conclusion
+f05_mosaic,f05_source,F05,train,Explainable AI in Credit Risk,mosaic,mixed,0.60-0.84,Introduction|Methodology|Results|Conclusion
+f06_direct_copy,f06_source,F06,train,Urban Traffic Forecasting,direct_copy,direct,0.85-1.00,Introduction|Methodology|Results|Conclusion
+f06_paraphrase_light,f06_source,F06,train,Urban Traffic Forecasting,paraphrase_light,semantic,0.70-0.88,Introduction|Methodology|Results|Conclusion
+f06_paraphrase_heavy,f06_source,F06,train,Urban Traffic Forecasting,paraphrase_heavy,semantic,0.55-0.78,Introduction|Methodology|Results|Conclusion
+f06_mosaic,f06_source,F06,train,Urban Traffic Forecasting,mosaic,mixed,0.60-0.84,Introduction|Methodology|Results|Conclusion
+f07_direct_copy,f07_source,F07,validation,Telemedicine Chronic Care,direct_copy,direct,0.85-1.00,Introduction|Methodology|Results|Conclusion
+f07_paraphrase_light,f07_source,F07,validation,Telemedicine Chronic Care,paraphrase_light,semantic,0.70-0.88,Introduction|Methodology|Results|Conclusion
+f07_paraphrase_heavy,f07_source,F07,validation,Telemedicine Chronic Care,paraphrase_heavy,semantic,0.55-0.78,Introduction|Methodology|Results|Conclusion
+f07_mosaic,f07_source,F07,validation,Telemedicine Chronic Care,mosaic,mixed,0.60-0.84,Introduction|Methodology|Results|Conclusion
+f08_direct_copy,f08_source,F08,validation,Precision Agriculture IoT,direct_copy,direct,0.85-1.00,Introduction|Methodology|Results|Conclusion
+f08_paraphrase_light,f08_source,F08,validation,Precision Agriculture IoT,paraphrase_light,semantic,0.70-0.88,Introduction|Methodology|Results|Conclusion
+f08_paraphrase_heavy,f08_source,F08,validation,Precision Agriculture IoT,paraphrase_heavy,semantic,0.55-0.78,Introduction|Methodology|Results|Conclusion
+f08_mosaic,f08_source,F08,validation,Precision Agriculture IoT,mosaic,mixed,0.60-0.84,Introduction|Methodology|Results|Conclusion
+f09_direct_copy,f09_source,F09,test,Cloud Disaster Recovery,direct_copy,direct,0.85-1.00,Introduction|Methodology|Results|Conclusion
+f09_paraphrase_light,f09_source,F09,test,Cloud Disaster Recovery,paraphrase_light,semantic,0.70-0.88,Introduction|Methodology|Results|Conclusion
+f09_paraphrase_heavy,f09_source,F09,test,Cloud Disaster Recovery,paraphrase_heavy,semantic,0.55-0.78,Introduction|Methodology|Results|Conclusion
+f09_mosaic,f09_source,F09,test,Cloud Disaster Recovery,mosaic,mixed,0.60-0.84,Introduction|Methodology|Results|Conclusion
+f10_direct_copy,f10_source,F10,test,Battery Recycling,direct_copy,direct,0.85-1.00,Introduction|Methodology|Results|Conclusion
+f10_paraphrase_light,f10_source,F10,test,Battery Recycling,paraphrase_light,semantic,0.70-0.88,Introduction|Methodology|Results|Conclusion
+f10_paraphrase_heavy,f10_source,F10,test,Battery Recycling,paraphrase_heavy,semantic,0.55-0.78,Introduction|Methodology|Results|Conclusion
+f10_mosaic,f10_source,F10,test,Battery Recycling,mosaic,mixed,0.60-0.84,Introduction|Methodology|Results|Conclusion

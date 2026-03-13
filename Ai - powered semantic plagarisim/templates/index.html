@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page_title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+
+        <header class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Academic Integrity Intelligence</span>
+                <h1>{{ page_title }}</h1>
+                <p>{{ subtitle }}</p>
+                <div class="hero-metrics">
+                    <article>
+                        <strong>Direct Copy Detection</strong>
+                        <span>Exact and near-verbatim sentence matching.</span>
+                    </article>
+                    <article>
+                        <strong>Semantic Similarity</strong>
+                        <span>Latent semantic scoring for rewritten content.</span>
+                    </article>
+                    <article>
+                        <strong>Section-Wise Reporting</strong>
+                        <span>Introduction, methodology, conclusion, and more.</span>
+                    </article>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <div class="hero-chip">Hybrid ML Pipeline</div>
+                <h2>Upload an assignment, add possible sources, and generate a plagiarism report in seconds.</h2>
+                <ul>
+                    <li>TXT, MD, PDF, and DOCX support</li>
+                    <li>Upload files or compare against web URLs</li>
+                    <li>Download the full analysis as JSON</li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="workspace">
+            <section class="panel composer-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-kicker">Input Workspace</span>
+                        <h2>Run New Analysis</h2>
+                    </div>
+                    <button type="button" class="ghost-button" id="load-demo-button">Load Demo Data</button>
+                </div>
+
+                <form id="analysis-form" class="analysis-form">
+                    <label class="field">
+                        <span>Assignment title</span>
+                        <input id="title" name="title" type="text" value="Student Submission" maxlength="160" />
+                    </label>
+
+                    <label class="field">
+                        <span>Assignment text</span>
+                        <textarea id="assignment-text" name="assignment_text" placeholder="Paste the student assignment here..."></textarea>
+                    </label>
+
+                    <label class="field">
+                        <span>Or upload assignment file</span>
+                        <input id="assignment-file" name="assignment_file" type="file" accept=".txt,.md,.pdf,.docx" />
+                    </label>
+
+                    <div class="input-grid">
+                        <label class="field">
+                            <span>Upload source documents</span>
+                            <input id="source-files" name="source_files" type="file" accept=".txt,.md,.pdf,.docx" multiple />
+                        </label>
+
+                        <label class="field">
+                            <span>Source URLs</span>
+                            <textarea id="source-urls" name="source_urls" placeholder="One URL per line"></textarea>
+                        </label>
+                    </div>
+
+                    <label class="checkbox-row">
+                        <input id="use-sample-sources" name="use_sample_sources" type="checkbox" value="true" />
+                        <span>Include built-in sample source library</span>
+                    </label>
+
+                    <div class="action-row">
+                        <button type="submit" class="primary-button" id="analyze-button">Analyze Assignment</button>
+                        <button type="button" class="secondary-button" id="download-report-button" disabled>Download JSON Report</button>
+                    </div>
+
+                    <p class="form-note" id="form-status">Ready for analysis.</p>
+                </form>
+            </section>
+
+            <section class="panel report-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-kicker">Analysis Report</span>
+                        <h2>Results Dashboard</h2>
+                    </div>
+                    <div class="status-pill" id="engine-pill">Awaiting input</div>
+                </div>
+
+                <div id="empty-state" class="empty-state">
+                    <h3>Nothing analyzed yet</h3>
+                    <p>Run an analysis to see overall similarity, flagged sentences, section-wise risk, and source contributions.</p>
+                </div>
+
+                <div id="results-shell" class="results-shell hidden">
+                    <div id="summary-cards" class="summary-cards"></div>
+                    <div class="two-column">
+                        <div>
+                            <div class="subpanel">
+                                <div class="subpanel-heading">
+                                    <h3>Section Analysis</h3>
+                                    <span id="summary-timestamp"></span>
+                                </div>
+                                <div id="sections-list" class="sections-list"></div>
+                            </div>
+
+                            <div class="subpanel">
+                                <div class="subpanel-heading">
+                                    <h3>Source Contribution</h3>
+                                </div>
+                                <div id="sources-list" class="sources-list"></div>
+                            </div>
+                        </div>
+
+                        <div class="subpanel matches-panel">
+                            <div class="subpanel-heading">
+                                <h3>Flagged Sentences</h3>
+                                <span id="flagged-count"></span>
+                            </div>
+                            <div id="matches-list" class="matches-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/static/app.js" defer></script>
+</body>
+</html>

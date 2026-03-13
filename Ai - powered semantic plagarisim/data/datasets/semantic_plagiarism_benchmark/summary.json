@@ -1,0 +1,31 @@
+{
+  "dataset_name": "semantic_plagiarism_benchmark",
+  "total_documents": 60,
+  "total_families": 10,
+  "documents_per_family": 6,
+  "split_counts": {
+    "train": 36,
+    "validation": 12,
+    "test": 12
+  },
+  "variant_counts": {
+    "source": 10,
+    "direct_copy": 10,
+    "paraphrase_light": 10,
+    "paraphrase_heavy": 10,
+    "mosaic": 10,
+    "independent": 10
+  },
+  "topics": [
+    "Adaptive Learning Analytics",
+    "Renewable Microgrids",
+    "Healthcare Cybersecurity",
+    "Sustainable Supply Chains",
+    "Explainable AI in Credit Risk",
+    "Urban Traffic Forecasting",
+    "Telemedicine Chronic Care",
+    "Precision Agriculture IoT",
+    "Cloud Disaster Recovery",
+    "Battery Recycling"
+  ]
+}
